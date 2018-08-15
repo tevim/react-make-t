@@ -1,0 +1,23 @@
+{
+  "name": "basic-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": "tevim/react-make-t",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tevim",
+  "license": "MIT",
+  "dependencies": {
+    "backtick-template": "^0.2.0",
+    "next": "^7.0.0",
+    "react-make-t": "file:../..",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}

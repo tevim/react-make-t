@@ -1,0 +1,16 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+    "no-duplicate-variable": true,
+    "object-literal-sort-keys": true,
+    "no-empty": true,
+    "semicolon": [true, "never"],
+    "jsx-wrap-multiline": false,
+    "jsx-no-lambda": false,
+    "jsx-no-multiline-js": false,
+    "jsx-boolean-value": false,
+    "jsx-no-bind": false
+  }
+}
