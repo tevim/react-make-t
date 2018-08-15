@@ -1,0 +1,5 @@
+{
+  "index": {
+    "welcome": "Willkommen zu Next.js, ${name}!"
+  }
+}

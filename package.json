@@ -1,0 +1,59 @@
+{
+  "name": "react-make-t",
+  "version": "1.0.0",
+  "description": "Simple translation library for React applications",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "LICENSE"
+  ],
+  "main": "dist/index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "react": ">= 16.3.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.16",
+    "@types/jest": "^23.3.13",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "jest": "^23.6.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "rimraf": "^2.6.2",
+    "standard": "^11.0.1",
+    "ts-jest": "~23.1.4",
+    "tslint": "^5.12.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.1"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "test": "npm run lint && npm run jest",
+    "build": "npm run clean && tsc",
+    "lint": "npm run lint:ts && npm run lint:js",
+    "lint:ts": "tslint -p .",
+    "lint:ts:fix": "tslint -p . --fix",
+    "lint:js": "standard",
+    "lint:js:fix": "standard --fix",
+    "clean": "rimraf dist",
+    "jest": "jest --config=./jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tevim/react-make-t.git"
+  },
+  "keywords": [
+    "i18n"
+  ],
+  "author": "tevim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tevim/react-make-t/issues"
+  },
+  "homepage": "https://github.com/tevim/react-make-t#readme"
+}
