@@ -48,7 +48,16 @@
     "url": "git+https://github.com/tevim/react-make-t.git"
   },
   "keywords": [
-    "i18n"
+    "globalization",
+    "internationalization",
+    "i18n",
+    "localization",
+    "l10n",
+    "nextjs",
+    "next",
+    "react",
+    "reactjs",
+    "translation"
   ],
   "author": "tevim",
   "license": "MIT",
