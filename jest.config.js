@@ -7,7 +7,7 @@ module.exports = {
   testMatch: [
     '**/*.(test|spec).(ts|tsx)'
   ],
-  setupTestFrameworkScriptFile: '<rootDir>/jest.setup.js',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
     '\\.(png|jpg|jpeg|svg)$': '<rootDir>/tests/stubs/image-stub'
