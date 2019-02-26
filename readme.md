@@ -12,18 +12,25 @@ type MakeT = (locale: ILocale) => ((targs: ITArgs) => string))
 
 This library works nicely with [Next.js][next], but also with any other [React][react] app.
 
+Installation
+===
+Install the package with:
+
+```bash
+npm install react-make-t
+```
+
 Usage
 ===
-Install via `npm install react-make-t`. Then use the module in your code:
+Then use the module in your code:
 
 ```javascript
-import { createI18nContext } from './index'
+import { createI18nContext } from 'react-make-t'
 const { I18nProvider, I18nConsumer } = createI18nContext({locale: 'de', t: () => ''})
 
 //
-// A simple implementation of `makeT` that fetches translated strings from an object.
+// A simple implementation of `makeT` which fetches translated strings from an object.
 //
-
 const translations = {
   de: {
     welcome: 'Herzlich Willkommen'
@@ -44,7 +51,7 @@ function makeT(locale) {
 //
 // Make the current `locale` and `makeT` available to the application.
 //
-function App () {
+function App() {
   return (
     <I18nProvider locale='de' makeT={makeT}>
       <WelcomePage name={'JJ'}/>
@@ -55,7 +62,7 @@ function App () {
 //
 // Translate your components!
 //
-function WelcomePage ({name}) {
+function WelcomePage({name}) {
   return (
     <I18nConsumer>
       {(i18n) =>
@@ -70,7 +77,7 @@ function WelcomePage ({name}) {
 Examples
 ===
 
-You may also have a look at the examples located in the [examples directory][examples]. These can be run locally by cloning this repo, and the running `npm install && npm run dev` inside one of the example directories.
+You may also have a look at the examples located in the [examples directory][examples]. These can be run locally by cloning this repo, and then running `npm install && npm run dev` inside one of the example directories.
 
 Contributing
 ===
