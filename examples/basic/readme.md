@@ -2,11 +2,11 @@
 
 ## Usage
 
-Clone the main repo and then run
+Clone the main repo and run
 
 ```
 npm install
 npm run dev
 ```
 
-inside this directory.
+inside this directory. Then, go to http://localhost:3000.
