@@ -1,7 +1,7 @@
 {
   "name": "react-make-t",
   "version": "1.0.0",
-  "description": "Simple translation library for React applications",
+  "description": "Simple internationalization library for React applications",
   "files": [
     "dist/index.js",
     "dist/index.d.ts",
